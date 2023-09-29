@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lessonapp';
+  user='Elon Zuckenberg the IV'
+  enemy=''
+
+  onUpdateEnemy(e:Event){
+    this.enemy=(<HTMLInputElement>e.target).value
+  }
+
 }
